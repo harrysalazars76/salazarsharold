@@ -75,9 +75,20 @@
                             <p>Soy</p>
                             <h1>Harold Ernesto (Harry) Salazar Serrano</h1>
                             <h2></h2>
-                            <div class="typed-text">Comunicador social con &eacute;nfasis en creaci&oacute;n y
-                                producci&oacute;n audiovisual
-                            </div>
+                            <!-- Contenedor donde se mostrará el texto tipeado -->
+<div class="typed-text"></div>
+
+<!-- Carga la librería Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Script que activa el efecto de tipeo -->
+<script>
+  var typed = new Typed('.typed-text', {
+    strings: ["Comunicador social con énfasis en creación y producción audiovisual"], // Texto a escribir
+    typeSpeed: 30, // Velocidad de tipeo
+    showCursor: false // No muestra el cursor de texto
+  });
+</script>
                             <div class="hero-btn">
                                 <!-- <a class="btn" href="">Hire Me</a> -->
                                 <a class="btn" target="_blank" href="https://wa.link/kgm08a">Contacto</a>
@@ -104,6 +115,7 @@
     &nbsp;
     &nbsp;
     &nbsp;
+
     <!-- About Start -->
     <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
         <div class="container-fluid">
