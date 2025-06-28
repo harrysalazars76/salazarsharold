@@ -306,11 +306,7 @@ a:focus {
     display: none;
 }
 
-.hero .hero-text .typed-cursor {
-    font-size: 35px;
-    font-weight: 300;
-    color: #ffffff;
-}
+
 
 .hero .hero-btn .btn {
     margin-top: 35px;
