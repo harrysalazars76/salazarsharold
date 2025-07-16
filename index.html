@@ -26,168 +26,205 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <div class="navbar navbar-expand-lg bg-light navbar-light" style="min-height: 100px;">
-        <div class="container-fluid align-items-center d-flex">
-            <!-- Navbar brand with logo -->
-            <a href="index.html" class="navbar-brand d-flex align-items-center" style="padding: 0;">
-                <img id="navbar-logo" src="img/imga.png" style="height: 100px; max-height: 100px; width: auto;">
-            </a>
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm " style="min-height: 100px; ">
+    <div class="container-fluid align-items-center d-flex">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center" style="padding: 0;">
+            <img id="navbar-logo" src="img/imga.png" style="height: 100px; max-height: 100px; width: auto;">
+        </a>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">Sobre m&iacute;</a>
-                    <a href="#service" class="nav-item nav-link">Servicios</a>
-                    <a href="#experience" class="nav-item nav-link">Experiencia</a>
-                    <a href="#portfolio" class="nav-item nav-link">Portafolio</a>
-                    <!--     <a href="#contact" class="nav-item nav-link">Contacto</a> -->
+        <div class="collapse navbar-collapse justify-content-end " id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link colorservice">Inicio</a>
+                <a href="#about" class="nav-item nav-link colorservice">Sobre mí</a>
+                <a href="#service" class="nav-item nav-link active">Servicios</a>
+                <a href="#experience" class="nav-item nav-link colorservice">Experiencia</a>
+                <a href="#education" class="nav-item nav-link colorservice">Educación</a>
+                <a href="#portfolio" class="nav-item nav-link colorservice">Portafolio</a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    @media (min-width: 992px) {
+        .navbar {
+            position: absolute;
+            width: 100%;
+            padding: 0px 125px;
+            background: #dc3545 !important;
+            border-bottom: 1px dashed rgba(256, 256, 256, .2);
+            z-index: 9;
+        }
+
+        .navbar.nav-sticky {
+            padding: -1px 60px;
+            background: #ffffff !important;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar.nav-sticky .navbar-brand {
+            color: #EF233C;
+        }
+
+        .navbar-light .navbar-nav .nav-link,
+        .navbar-light .navbar-nav .nav-link:focus {
+            padding: 10px 10px 8px 10px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .navbar-light.nav-sticky .navbar-nav .nav-link,
+        .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+            color: #414141;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: #111111;
+        }
+
+        .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+        .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+            color: #EF233C;
+        }
+    }
+</style>
+<!-- Nav Bar End -->
+
+
+<!-- Hero Start -->
+<div class="hero " id="home" style="height: 600px; display: flex; align-items: center;">
+    <div class="container-fluid ">
+        <div class="row align-items-center ">
+            <div class="col-sm-12 col-md-6">
+                <div class="hero-content ">
+                    <div class="hero-text">
+                        <p>Soy</p>
+                        <h1>Harold Ernesto (Harry) Salazar Serrano</h1>
+                        <h2></h2>
+                        <div class="typed-text">Comunicador social con &eacute;nfasis en creaci&oacute;n y
+                            producci&oacute;n audiovisual
+                        </div>
+                        <div class="hero-btn">
+                            <!-- <a class="btn" href="">Hire Me</a> -->
+                            <a class="btn" target="_blank" href="https://wa.link/kgm08a">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-none d-md-block text-end">
+                <div class="hero-image">
+                    <img src="img/hero.png" alt="Hero Image" style="width: 400px; height: auto;">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Script para cambiar el logo al hacer scroll -->
-    <script>
-        window.addEventListener('scroll', function () {
-            const logo = document.getElementById('navbar-logo');
-            if (window.scrollY > 10) {
-                logo.src = 'img/imgb.png';
-            } else {
-                logo.src = 'img/imga.png';
-            }
-        });
-    </script>
-    <!-- Nav Bar End -->
+<!-- Hero End -->
 
 
-    <!-- Hero Start -->
-    <div class="hero" id="home" style="height: 600px; display: flex; align-items: center;">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <p>Soy</p>
-                            <h1>Harold Ernesto (Harry) Salazar Serrano</h1>
-                            <h2></h2>
-                            <div class="typed-text">Comunicador social con &eacute;nfasis en creaci&oacute;n y
-                                producci&oacute;n audiovisual
-                            </div>
-                            <div class="hero-btn">
-                                <!-- <a class="btn" href="">Hire Me</a> -->
-                                <a class="btn" target="_blank" href="https://wa.link/kgm08a">Contacto</a>
-                            </div>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+<!-- About Start -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <p>Conozca m&aacute;s sobre m&iacute;</p>
+                        <h2>+1 a&ntilde;o de experiencia</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Soy Comunicador Social con enfoque audiovisual. Me especializo en la producci&oacute;n
+                            de
+                            contenidos creativos y estrat&eacute;gicos que conectan con las audiencias. Manejo
+                            herramientas
+                            digitales, dise&ntilde;o y redes sociales para potenciar marcas y mensajes con impacto.
+
+
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-name">
+                            <p>Producci&oacute;n y Edici&oacute;n Audiovisual</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="skill-name">
+                            <p>Dise&ntilde;o y contenido digital</p>
+                            <p>65%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="skill-name">
+                            <p>Web y plataformas digitales</p>
+                            <p>55%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="skill-name">
+                            <p>Redes sociales y Marketing digital</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 d-none d-md-block text-end">
-                    <div class="hero-image">
-                        <img src="img/hero.png" alt="Hero Image" style="width: 400px; height: auto;">
-                    </div>
+                    <a class="btn" target="_blank"
+                        href="https://drive.google.com/drive/folders/1i8J4BFN59EdzozelpKTFxo9dv3g9Pk9T?usp=sharing">Hoja
+                        de vida</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Hero End -->
-
-
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-
-    <!-- About Start -->
-    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="img/about.jpg" alt="Image">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <div class="section-header text-left">
-                            <p>Conozca m&aacute;s sobre m&iacute;</p>
-                            <h2>+1 a&ntilde;o de experiencia</h2>
-                        </div>
-                        <div class="about-text">
-                            <p>
-                                Soy Comunicador Social con enfoque audiovisual. Me especializo en la producci&oacute;n
-                                de
-                                contenidos creativos y estrat&eacute;gicos que conectan con las audiencias. Manejo
-                                herramientas
-                                digitales, dise&ntilde;o y redes sociales para potenciar marcas y mensajes con impacto.
+</div>
+<!-- About End -->
 
 
-                            </p>
-                        </div>
-                        <div class="skills">
-                            <div class="skill-name">
-                                <p>Producci&oacute;n y Edici&oacute;n Audiovisual</p>
-                                <p>80%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                            <div class="skill-name">
-                                <p>Dise&ntilde;o y contenido digital</p>
-                                <p>65%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                            <div class="skill-name">
-                                <p>Web y plataformas digitales</p>
-                                <p>55%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                            <div class="skill-name">
-                                <p>Redes sociales y Marketing digital</p>
-                                <p>85%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <a class="btn" target="_blank"
-                            href="https://drive.google.com/drive/folders/1i8J4BFN59EdzozelpKTFxo9dv3g9Pk9T?usp=sharing">Hoja
-                            de vida</a>
-                    </div>
-                </div>
-            </div>
+<!-- Service Start -->
+<div class="service" id="service">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>LO QUE HAGO</p>
+            <h2>Servicios de excelente calidad</h2>
         </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Service Start -->
-    <div class="service" id="service">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>LO QUE HAGO</p>
-                <h2>Servicios de excelente calidad</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+        <div class="row">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                <a href="ser_audiovisual.html" class="service-link" style="text-decoration: none; color: inherit;">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fas fa-share-alt"></i> <!-- Ícono para Community Manager -->
+                            <i class="fas fa-share-alt"></i>
                         </div>
                         <div class="service-text">
                             <h3>Community manager</h3>
@@ -197,12 +234,14 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
+            </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <a href="ser_audiovisual.html" class="service-link" style="text-decoration: none; color: inherit;">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fas fa-code"></i> <!-- Ícono para desarrollo web -->
+                            <i class="fas fa-code"></i>
                         </div>
                         <div class="service-text">
                             <h3>Desarrollo b&aacute;sico web</h3>
@@ -212,12 +251,14 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
+            </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                <a href="ser_audiovisual.html" class="service-link" style="text-decoration: none; color: inherit;">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i> <!-- Ícono para diseño gráfico -->
+                            <i class="fas fa-paint-brush"></i>
                         </div>
                         <div class="service-text">
                             <h3>Diseño de piezas gr&aacute;ficas</h3>
@@ -228,110 +269,113 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
+            </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                <a href="ser_audiovisual.html" class="service-link" style="text-decoration: none; color: inherit;">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fas fa-video"></i> <!-- Ícono para producción audiovisual -->
+                            <i class="fas fa-video"></i>
                         </div>
                         <div class="service-text">
                             <h3>Gesti&oacute;n de Producci&oacute;n Audiovisual</h3>
                             <p>
                                 Coordino la pre, durante y posproducci&oacute;n audiovisual, asegurando tiempos,
-                                recursos y
-                                calidad en cada etapa del proceso.
+                                recursos y calidad en cada etapa del proceso.
                             </p>
                         </div>
                     </div>
-                </div>
-
+                </a>
             </div>
+
         </div>
     </div>
-    <!-- Service End -->
+</div>
+<!-- Service End -->
 
 
-    <!-- Experience Start -->
-    <div class="experience" id="experience">
-        <div class="container">
-            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Mi hoja de vida</p>
-                <h2>Experiencia Laboral</h2>
-            </header>
-            <div class="timeline">
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">Mayo a Junio del 2025</div>
-                        <h2>Productor de Video de Producto y Contenido Digital
-                        </h2>
-                        <h4>Flinco EU, Bogot&aacute;, COL</h4>
-                        <p>
-                            Dise&ntilde;&eacute; el concepto creativo y edit&eacute; un video de producto.
-                            Integr&eacute; una voz en off y redact&eacute; los copies para YouTube, Facebook e
-                            Instagram.
-                            Publiqu&eacute; el contenido en redes, alineado con la identidad de marca y enfocado en
-                            aumentar su alcance digital.
-                        </p>
-                    </div>
+
+<!-- Experience Start -->
+<div class="experience" id="experience">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Mi hoja de vida</p>
+            <h2>Experiencia Laboral</h2>
+        </header>
+        <div class="timeline">
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Mayo a Junio del 2025</div>
+                    <h2>Productor de Video de Producto y Contenido Digital
+                    </h2>
+                    <h4>Flinco EU, Bogot&aacute;, COL</h4>
+                    <p>
+                        Dise&ntilde;&eacute; el concepto creativo y edit&eacute; un video de producto.
+                        Integr&eacute; una voz en off y redact&eacute; los copies para YouTube, Facebook e
+                        Instagram.
+                        Publiqu&eacute; el contenido en redes, alineado con la identidad de marca y enfocado en
+                        aumentar su alcance digital.
+                    </p>
                 </div>
-                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">Marzo a Mayo del 2025</div>
-                        <h2>Productor de contenido digital y redise&ntilde;o de marca</h2>
-                        <h4>Centro Vacacional Piscina San Javier, La mesa, COL</h4>
-                        <p>
-                            Renovaci&oacute;n de imagen digital con nuevo logotipo, redacci&oacute;n institucional,
-                            sitio web tur&iacute;stico con reservas y
-                            contenido visual alineado a valores de hospitalidad y sostenibilidad.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Marzo a Mayo del 2025</div>
+                    <h2>Productor de contenido digital y redise&ntilde;o de marca</h2>
+                    <h4>Centro Vacacional Piscina San Javier, La mesa, COL</h4>
+                    <p>
+                        Renovaci&oacute;n de imagen digital con nuevo logotipo, redacci&oacute;n institucional,
+                        sitio web tur&iacute;stico con reservas y
+                        contenido visual alineado a valores de hospitalidad y sostenibilidad.
+                    </p>
                 </div>
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">Abril a Mayo del 2025</div>
-                        <h2>Consultor en comunicaci&oacute;n digital y producci&oacute;n audiovisual
-                        </h2>
-                        <h4>Flinco EU, Bogot&aacute;, COL</h4>
-                        <p>
-                            Producci&oacute;n de video corporativo y redacci&oacute;n de textos estrat&eacute;gicos
-                            enfocados en fortalecer
-                            la identidad de marca. Se moderniz&oacute; el sitio web, se optimizaron las redes sociales
-                            y se configuraron los canales digitales institucionales para mejorar la presencia
-                            y comunicaci&oacute;n en l&iacute;nea.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Abril a Mayo del 2025</div>
+                    <h2>Consultor en comunicaci&oacute;n digital y producci&oacute;n audiovisual
+                    </h2>
+                    <h4>Flinco EU, Bogot&aacute;, COL</h4>
+                    <p>
+                        Producci&oacute;n de video corporativo y redacci&oacute;n de textos estrat&eacute;gicos
+                        enfocados en fortalecer
+                        la identidad de marca. Se moderniz&oacute; el sitio web, se optimizaron las redes sociales
+                        y se configuraron los canales digitales institucionales para mejorar la presencia
+                        y comunicaci&oacute;n en l&iacute;nea.
+                    </p>
                 </div>
-                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2024 -2025</div>
-                        <h2>Practicante en producci&oacute;n y contenidos period&iacute;sticos</h2>
-                        <h4>Caracol Televisi&oacute;n, Bogot&aacute;, COL</h4>
-                        <p>
-                            Producci&oacute;n de notas period&iacute;sticas con enfoque social para el noticiero
-                            nacional
-                            y el programa C&oacute;digo Caracol. Apoyo en la coordinaci&oacute;n de contenido
-                            audiovisual
-                            y en la emisi&oacute;n en vivo del noticiero. Participaci&oacute;n en la redacci&oacute;n de
-                            reportajes
-                            y en proyectos especiales como El Proyecto es Colombia y la COP16.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2024 -2025</div>
+                    <h2>Practicante en producci&oacute;n y contenidos period&iacute;sticos</h2>
+                    <h4>Caracol Televisi&oacute;n, Bogot&aacute;, COL</h4>
+                    <p>
+                        Producci&oacute;n de notas period&iacute;sticas con enfoque social para el noticiero
+                        nacional
+                        y el programa C&oacute;digo Caracol. Apoyo en la coordinaci&oacute;n de contenido
+                        audiovisual
+                        y en la emisi&oacute;n en vivo del noticiero. Participaci&oacute;n en la redacci&oacute;n de
+                        reportajes
+                        y en proyectos especiales como El Proyecto es Colombia y la COP16.
+                    </p>
                 </div>
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2020 - 2025</div>
-                        <h2>Proveedor de servicios de comunicaci&oacute;n y producci&oacute;n audiovisual
-                        </h2>
-                        <h4>Japs Producciones, Bogot&aacute;, COL</h4>
-                        <p>
-                            Proveedor de servicios en sonido, iluminaci&oacute;n, DJ y producci&oacute;n de eventos.
-                            Tesis de grado en Comunicaci&oacute;n Social (Javeriana) enfocada en el rebranding de JAPS,
-                            con producci&oacute;n de videos, manual de marca, copys y diseño web.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2020 - 2025</div>
+                    <h2>Proveedor de servicios de comunicaci&oacute;n y producci&oacute;n audiovisual
+                    </h2>
+                    <h4>Japs Producciones, Bogot&aacute;, COL</h4>
+                    <p>
+                        Proveedor de servicios en sonido, iluminaci&oacute;n, DJ y producci&oacute;n de eventos.
+                        Tesis de grado en Comunicaci&oacute;n Social (Javeriana) enfocada en el rebranding de JAPS,
+                        con producci&oacute;n de videos, manual de marca, copys y diseño web.
+                    </p>
                 </div>
-                <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            </div>
+            <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2045 - 2050</div>
                         <h2>Web Developer</h2>
@@ -353,113 +397,114 @@
                         </p>
                     </div>
                 </div> -->
-            </div>
         </div>
     </div>
-    <!-- Job Experience End -->
-    <!-- Banner Start -->
-    <div class="banner wow zoomIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>TU PR&Oacute;XIMO COLABORADOR</p>
-                <h2>Aporta valor <span>desde </span>el primer d&iacute;a</h2>
-            </div>
-            <div class="container banner-text">
-                <p>
-                    Soy Comunicador Social con experiencia en producci&oacute;n audiovisual,
-                    dise&ntilde;o digital y gesti&oacute;n de contenidos. Busco nuevas oportunidades
-                    para crecer y contribuir con creatividad y compromiso.
-                </p>
-                <!-- <a class="btn">Order Now</a> -->
-            </div>
+</div>
+<!-- Job Experience End -->
+<!-- Banner Start -->
+<div class="banner wow zoomIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>TU PR&Oacute;XIMO COLABORADOR</p>
+            <h2>Aporta valor <span>desde </span>el primer d&iacute;a</h2>
+        </div>
+        <div class="container banner-text">
+            <p>
+                Soy Comunicador Social con experiencia en producci&oacute;n audiovisual,
+                dise&ntilde;o digital y gesti&oacute;n de contenidos. Busco nuevas oportunidades
+                para crecer y contribuir con creatividad y compromiso.
+            </p>
+            <!-- <a class="btn">Order Now</a> -->
         </div>
     </div>
-    <!-- Banner End -->
+</div>
+<!-- Banner End -->
 
-    <!-- Experience Start -->
-    <div class="experience" id="experience">
-        <div class="container">
-            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <!-- <p>Mi hoja de vida</p> -->
-                <h2>Educaci&oacute;n</h2>
-            </header>
-            <div class="timeline">
-                <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2025 - En curso</div>
-                        <h2>Certificaci&oacute;n profesional de Google Marketing digital y comercio electr&oacute;nico</h2>
-                        <h4>Coursera</h4>
-                        <p>
-                            La certificaci&oacute;n “Google Digital Marketing & E-commerce” de Coursera es una
-                            formaci&oacute;n
-                            creada por Google para enseñar desde cero c&oacute;mo funciona el marketing digital y el
-                            comercio electr&oacute;nico. Explica conceptos como SEO, publicidad en redes, email
-                            marketing
-                            y c&oacute;mo crear tiendas online, usando herramientas como Google Ads, Shopify y Canva.
-                        </p>
-                    </div>
+<!-- Experience Start -->
+<div class="experience" id="education">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <!-- <p>Mi hoja de vida</p> -->
+            <h2>Educaci&oacute;n</h2>
+        </header>
+        <div class="timeline">
+            <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2025 - En curso</div>
+                    <h2>Certificaci&oacute;n profesional de Google Marketing digital y comercio electr&oacute;nico</h2>
+                    <h4>Coursera</h4>
+                    <p>
+                        La certificaci&oacute;n “Google Digital Marketing & E-commerce” de Coursera es una
+                        formaci&oacute;n
+                        creada por Google para enseñar desde cero c&oacute;mo funciona el marketing digital y el
+                        comercio electr&oacute;nico. Explica conceptos como SEO, publicidad en redes, email
+                        marketing
+                        y c&oacute;mo crear tiendas online, usando herramientas como Google Ads, Shopify y Canva.
+                    </p>
                 </div>
-                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2025</div>
-                        <h2>Certificaci&oacute;n en “Foundations of Digital Marketing and E-commerce”</h2>
-                        <h4>Coursera</h4>
-                        <p>Introducci&oacute;n al programa de certificaci&oacute;n profesional, explorando 
-                            la plataforma Coursera y sus procedimientos. Adquir&iacute; conocimientos sobre 
-                            los conceptos clave del marketing digital y el comercio electr&oacute;nico, las 
-                            funciones laborales b&aacute;sicas del sector y las habilidades transferibles 
-                            necesarias. Aprend&iacute; a identificar oportunidades laborales, habilidades 
-                            en demanda y cómo prepararme para una carrera en estas áreas.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2025</div>
+                    <h2>Certificaci&oacute;n en “Foundations of Digital Marketing and E-commerce”</h2>
+                    <h4>Coursera</h4>
+                    <p>Introducci&oacute;n al programa de certificaci&oacute;n profesional, explorando
+                        la plataforma Coursera y sus procedimientos. Adquir&iacute; conocimientos sobre
+                        los conceptos clave del marketing digital y el comercio electr&oacute;nico, las
+                        funciones laborales b&aacute;sicas del sector y las habilidades transferibles
+                        necesarias. Aprend&iacute; a identificar oportunidades laborales, habilidades
+                        en demanda y cómo prepararme para una carrera en estas áreas.
+                    </p>
                 </div>
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2020 - 2025</div>
-                        <h2>Pregrado Comunicaci&oacute;n Social Enfas&iacute;s enCreaci&oacute;n y Producci&oacute;n Audiovisual</h2>
-                        <h4>Pontificia Universidad Javeriana, Bogot&aacute;, COL</h4>
-                        <p>
-                            La carrera de Comunicaci&oacute;n Social con &eacute;nfasis en Creaci&oacute;n y
-                            Producci&oacute;n Audiovisual
-                            de la Pontificia Universidad Javeriana ense&ntilde;a a desarrollar contenidos para medios
-                            como cine, televisi&oacute;n, radio y plataformas digitales. Forma comunicadores integrales
-                            que combinan la narrativa con el manejo t&eacute;cnico de imagen, sonido y edici&oacute;n,
-                            para contar historias con impacto social y cultural.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2020 - 2025</div>
+                    <h2>Pregrado Comunicaci&oacute;n Social Enfas&iacute;s enCreaci&oacute;n y Producci&oacute;n
+                        Audiovisual</h2>
+                    <h4>Pontificia Universidad Javeriana, Bogot&aacute;, COL</h4>
+                    <p>
+                        La carrera de Comunicaci&oacute;n Social con &eacute;nfasis en Creaci&oacute;n y
+                        Producci&oacute;n Audiovisual
+                        de la Pontificia Universidad Javeriana ense&ntilde;a a desarrollar contenidos para medios
+                        como cine, televisi&oacute;n, radio y plataformas digitales. Forma comunicadores integrales
+                        que combinan la narrativa con el manejo t&eacute;cnico de imagen, sonido y edici&oacute;n,
+                        para contar historias con impacto social y cultural.
+                    </p>
                 </div>
-                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2025</div>
-                        <h2>Certificaci&oacute;n en Publicidad en Redes sociales</h2>
-                        <h4>Santander Open Academy</h4>
-                        <p>
-                            La certificaci&oacute;n en Publicidad en Redes Sociales de Santander Open Academy enseña
-                            c&oacute;mo
-                            crear, gestionar y optimizar campa&ntilde;as publicitarias en plataformas como Facebook,
-                            Instagram,
-                            LinkedIn y TikTok. Explica el uso de audiencias, segmentaci&oacute;n, an&aacute;lisis de
-                            resultados y
-                            herramientas clave para promocionar productos o marcas en el entorno digital.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2025</div>
+                    <h2>Certificaci&oacute;n en Publicidad en Redes sociales</h2>
+                    <h4>Santander Open Academy</h4>
+                    <p>
+                        La certificaci&oacute;n en Publicidad en Redes Sociales de Santander Open Academy enseña
+                        c&oacute;mo
+                        crear, gestionar y optimizar campa&ntilde;as publicitarias en plataformas como Facebook,
+                        Instagram,
+                        LinkedIn y TikTok. Explica el uso de audiencias, segmentaci&oacute;n, an&aacute;lisis de
+                        resultados y
+                        herramientas clave para promocionar productos o marcas en el entorno digital.
+                    </p>
                 </div>
-                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                    <div class="timeline-text">
-                        <div class="timeline-date">2024</div>
-                        <h2>Certificaci&oacute;n en Scrum Master
-                        </h2>
-                        <h4>Scrum Study</h4>
-                        <p>
-                            La certificaci&oacute;n Scrum Master de SCRUMstudy ense&ntilde;a los principios y
-                            pr&aacute;cticas del
-                            marco &aacute;gil Scrum, enfoc&aacute;ndose en c&oacute;mo liderar equipos, facilitar
-                            procesos
-                            y entregar valor de forma iterativa.
-                        </p>
-                    </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2024</div>
+                    <h2>Certificaci&oacute;n en Scrum Master
+                    </h2>
+                    <h4>Scrum Study</h4>
+                    <p>
+                        La certificaci&oacute;n Scrum Master de SCRUMstudy ense&ntilde;a los principios y
+                        pr&aacute;cticas del
+                        marco &aacute;gil Scrum, enfoc&aacute;ndose en c&oacute;mo liderar equipos, facilitar
+                        procesos
+                        y entregar valor de forma iterativa.
+                    </p>
                 </div>
-                <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            </div>
+            <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2045 - 2050</div>
                         <h2>Web Developer</h2>
@@ -481,41 +526,41 @@
                         </p>
                     </div>
                 </div> -->
-            </div>
         </div>
     </div>
-    <!-- Job Experience End -->
+</div>
+<!-- Job Experience End -->
 
 
-    <!-- Banner Start -->
-    <div class="banner wow zoomIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>DISPONIBLE PARA TRABAJAR</p>
-                <h2>Contrata Talento <span>con </span> Prop&oacute;sito</h2>
-            </div>
-            <div class="container banner-text">
-                <p>
-                    Soy Comunicador Social con enfoque audiovisual y digital.
-                    Estoy abierto a nuevas oportunidades laborales donde pueda
-                    aportar con creatividad, estrategia y compromiso.
-                </p>
-                <!-- <a class="btn">Pricing Plan</a> -->
-            </div>
+<!-- Banner Start -->
+<div class="banner wow zoomIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>DISPONIBLE PARA TRABAJAR</p>
+            <h2>Contrata Talento <span>con </span> Prop&oacute;sito</h2>
+        </div>
+        <div class="container banner-text">
+            <p>
+                Soy Comunicador Social con enfoque audiovisual y digital.
+                Estoy abierto a nuevas oportunidades laborales donde pueda
+                aportar con creatividad, estrategia y compromiso.
+            </p>
+            <!-- <a class="btn">Pricing Plan</a> -->
         </div>
     </div>
-    <!-- Banner End -->
+</div>
+<!-- Banner End -->
 
 
-    <!-- Portfolio Start -->
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Mi Portafolio</p>
-                <h2>Mi excelente Portafolio</h2>
-            </div>
-            <div class="row">
-                <!-- <div class="col-12">
+<!-- Portfolio Start -->
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Mi Portafolio</p>
+            <h2>Mi excelente Portafolio</h2>
+        </div>
+        <div class="row">
+            <!-- <div class="col-12">
                     <ul id="portfolio-filter">
                         <li data-filter="*" class="filter-active">All</li>
                         <li data-filter=".filter-1">Web Design</li>
@@ -523,57 +568,56 @@
                         <li data-filter=".filter-3">Game Dev</li>
                     </ul>
                 </div> -->
+        </div>
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio-1.jpg" alt="Image">
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Producci&oacute;n audiovisual</h3>
+                        <a class="btn" target="_blank"
+                            href="https://www.behance.net/gallery/229070019/Producciones-Audiovisuales">+</a>
+                    </div>
+                </div>
             </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-1.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Producci&oacute;n audiovisual</h3>
-                            <a class="btn" target="_blank"
-                                href="https://www.behance.net/gallery/229070019/Producciones-Audiovisuales">+</a>
-                        </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio-2.jpg" alt="Image">
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Fotograf&iacute;as</h3>
+                        <a class="btn" target="_blank" href="https://www.behance.net/haroldsalazar4">+</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-2.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Fotograf&iacute;as</h3>
-                            <a class="btn" target="_blank" href="https://www.behance.net/haroldsalazar4">+</a>
-                        </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio-3.jpg" alt="Image">
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Desarrollo web</h3>
+                        <a class="btn" target="_blank" href="https://www.behance.net/gallery/229070805/Sitios-Web">+</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-3.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Desarrollo web</h3>
-                            <a class="btn" target="_blank"
-                                href="https://www.behance.net/gallery/229070805/Sitios-Web">+</a>
-                        </div>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp"
+                data-wow-delay="0.4s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio-4.png" alt="Image">
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Notas al aire</h3>
+                        <a class="btn" target="_blank"
+                            href="https://www.behance.net/gallery/229127339/Notas-al-aire">+</a>
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp"
-                    data-wow-delay="0.4s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-4.png" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Notas al aire</h3>
-                            <a class="btn" target="_blank"
-                                href="https://www.behance.net/gallery/229127339/Notas-al-aire">+</a>
-                        </div>
-                    </div>
 
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
                             <img src="img/portfolio-4.jpg" alt="Image">
@@ -606,16 +650,16 @@
                         </div>
                     </div>
                 </div> -->
-                </div>
             </div>
         </div>
-        <!-- Portfolio End -->
+    </div>
+    <!-- Portfolio End -->
 
 
 
 
-        <!-- Contact Start -->
-        <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+    <!-- Contact Start -->
+    <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
         <div class="container-fluid">
             <div class="container">
                 <div class="row align-items-center">
@@ -656,74 +700,74 @@
             </div>
         </div>
     </div> -->
-        <!-- Contact End -->
+    <!-- Contact End -->
 
 
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Harold Ernesto (Harry) Salazar Serrano</h2>
-                        <h3>Bogot&aacute;, Colombia</h3>
-                        <div class="footer-menu">
-                            <p>+57 320 494-3261</p>
-                            <p>haroldernesto@hotmail.com</p>
-                        </div>
-                        <div class="footer-social">
-                            <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
-                            <!-- <a href=""><i class="fab fa-facebook-f"></i></a> -->
-                            <a target="_blank" href="https://www.youtube.com/@harry.salazar76"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a target="_blank" href="https://www.instagram.com/harry.salazar76/"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a target="_blank"
-                                href="https://www.linkedin.com/in/harold-ernesto-salazar-serrano-7129a1153/"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a target="_blank" href="https://www.behance.net/haroldsalazar4"><i
-                                    class="fab fa-behance"></i></a>
-                        </div>
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Harold Ernesto (Harry) Salazar Serrano</h2>
+                    <h3>Bogot&aacute;, Colombia</h3>
+                    <div class="footer-menu">
+                        <p>+57 320 494-3261</p>
+                        <p>haroldernesto@hotmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href=""><i class="fab fa-facebook-f"></i></a> -->
+                        <a target="_blank" href="https://www.youtube.com/@harry.salazar76"><i
+                                class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/harry.salazar76/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/harold-ernesto-salazar-serrano-7129a1153/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://www.behance.net/haroldsalazar4"><i
+                                class="fab fa-behance"></i></a>
                     </div>
                 </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Harold Ernesto Salazar Serrano</a>, All Right Reserved |
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Harold Ernesto Salazar Serrano</a>, All Right Reserved |
 
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    </p>
-                </div>
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
 
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-</body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
 
 </html>
