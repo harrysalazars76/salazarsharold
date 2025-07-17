@@ -1704,16 +1704,3 @@ a:focus {
     color: #E30613;
 }
 
- /* Portfolio Image Styling */
-    .portfolio-img img {
-        width: 100% !important;
-        height: 250px !important; /* Set desired uniform height */
-        object-fit: cover; /* Crops image without distortion */
-        border-radius: 10px; /* Optional: rounded corners */
-    }
-
-    /* Optional: Center text inside portfolio-text */
-    .portfolio-text {
-        text-align: center;
-        margin-top: 10px;
-    }
