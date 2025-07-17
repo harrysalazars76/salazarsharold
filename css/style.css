@@ -1704,68 +1704,16 @@ a:focus {
     color: #E30613;
 }
 
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+ .portfolio-img {
+        width: 100%;
+        height: 250px; /* Ajusta esta altura según lo que necesites */
+        overflow: hidden;
+        border-radius: 8px; /* Opcional */
+    }
 
-.portfolio-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.portfolio-wrap {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 350px; /* Ajusta el ancho máximo */
-    display: flex;
-    flex-direction: column;
-    height: 400px; /* Todas las cajas con la misma altura */
-}
-
-.portfolio-img {
-    width: 100%;
-    height: 250px; /* Tamaño fijo para imágenes */
-    overflow: hidden;
-}
-
-.portfolio-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recorta proporcionalmente sin deformar */
-}
-
-.portfolio-text {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.portfolio-text h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.portfolio-text .btn {
-    display: inline-block;
-    background: #dc3545;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.portfolio-text .btn:hover {
-    background: #a71d2a;
-}
+    .portfolio-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Mantiene la proporción y recorta */
+        display: block;
+    }
