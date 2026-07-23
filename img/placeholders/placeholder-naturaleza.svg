@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c7a3f"/>
+      <stop offset="100%" stop-color="#26401f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g transform="translate(200,120)" fill="#ffffff" fill-opacity="0.85">
+    
+    <path d="M0,-40 C 35,-40 40,0 20,25 C 0,50 -35,20 -20,-15 C -12,-30 -5,-38 0,-40 Z"/>
+    <path d="M0,-40 C -5,-10 -10,15 -20,35" fill="none" stroke="#dc354533" stroke-width="4"/>
+
+  </g>
+  <text x="200" y="220" font-family="Montserrat, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">Naturaleza</text>
+  <text x="200" y="245" font-family="Montserrat, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.8" text-anchor="middle">Espacio reservado</text>
+</svg>

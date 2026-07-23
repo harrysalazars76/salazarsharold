@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc3545"/>
+      <stop offset="100%" stop-color="#8f1c28"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g transform="translate(200,120)" fill="#ffffff" fill-opacity="0.85">
+    
+    <circle cx="0" cy="0" r="42" fill="#00000022"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <path d="M -12,-20 L -12,20 L 22,0 Z" fill="#ffffff"/>
+
+  </g>
+  <text x="200" y="220" font-family="Montserrat, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">Video</text>
+  <text x="200" y="245" font-family="Montserrat, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.8" text-anchor="middle">Espacio reservado</text>
+</svg>
