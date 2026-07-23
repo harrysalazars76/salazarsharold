@@ -73,15 +73,55 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Mobile nav toggle
+  // Header dinámico: se compacta y oscurece al hacer scroll
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var lastScrollState = false;
+    function updateHeaderScroll() {
+      var scrolled = window.scrollY > 12;
+      if (scrolled !== lastScrollState) {
+        header.classList.toggle('is-scrolled', scrolled);
+        lastScrollState = scrolled;
+      }
+    }
+    updateHeaderScroll();
+    window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+  }
+
+  // Mobile nav toggle (con overlay, bloqueo de scroll y animación hamburguesa -> X)
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
   if (toggle && nav) {
+    var overlay = document.createElement('div');
+    overlay.className = 'nav-overlay';
+    document.body.appendChild(overlay);
+
+    function closeNav() {
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-locked');
+    }
+    function openNav() {
+      nav.classList.add('open');
+      overlay.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('nav-locked');
+    }
     toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
+      var isOpen = nav.classList.contains('open');
+      if (isOpen) { closeNav(); } else { openNav(); }
     });
+    overlay.addEventListener('click', closeNav);
     nav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { nav.classList.remove('open'); });
+      a.addEventListener('click', closeNav);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeNav();
+    });
+    // Si la ventana crece a escritorio con el menú abierto, se cierra
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 900) closeNav();
     });
   }
 
